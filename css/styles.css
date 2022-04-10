@@ -1,0 +1,94 @@
+/*Importamos nuestra fuente personalizada*/
+
+@font-face {
+  font-family: "Sega";
+  src: url("../fonts/SEGA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Reseteamos los margins y los padding que ponen por defecto los navegadores. 
+* Además, centramos el texto de toda nuestra página.
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Inicio de los estilos de la cabecera.*/
+
+#header {
+  display: flex;
+  min-width: 1024px;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/controller.jpg") repeat;
+  background-size: 35px;
+}
+
+/*Fin de los estilos de la cabecera*/
+
+/*Inicio de los estilos del contenido principal*/
+
+#main {
+  height: 250px;
+  margin: 0 auto;
+}
+
+#main #title {
+  font-family: "Sega";
+  font-size: 33px;
+  color: #5584ac;
+  text-shadow: 4px 4px white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main #menu {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+#main #menu select {
+  margin-right: 15px;
+}
+
+#main #menu input {
+  margin: 5px;
+  width: 75px;
+  height: 40px;
+  background: #5584ac;
+  padding: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+#main #menu input:hover {
+   background-color: #333;
+   color: #5584ac;
+  }
+
+/*Fin de los estilos del contenido principal*/
+
+/*Inicio de los estilos del pié de página*/
+
+#footer {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/megadrive.png");
+}
+
+#footer #copyright {
+  font-family: "Sega";
+  font-size: 30px;
+  font-weight: bold;
+  color: #5584ac;
+}
+
+/*Fin de los estilos del pié de página*/
