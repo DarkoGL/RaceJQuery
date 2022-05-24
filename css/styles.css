@@ -7,9 +7,7 @@
   font-style: normal;
 }
 
-/*Reseteamos los margins y los padding que ponen por defecto los navegadores. 
-* Además, centramos el texto de toda nuestra página.
-*/
+/* Reseteamos los margins y los padding que ponen por defecto los navegadores */
 
 * {
   margin: 0px;
@@ -20,11 +18,10 @@
 
 #header {
   display: flex;
-  min-width: 1024px;
-  height: 175px;
+  height: 102px;
   align-items: center;
   justify-content: center;
-  background: url("../img/controller.jpg") repeat;
+  background: url("../assets/img/controller.jpg") repeat;
   background-size: 35px;
 }
 
@@ -33,8 +30,8 @@
 /*Inicio de los estilos del contenido principal*/
 
 #main {
-  height: 250px;
-  margin: 0 auto;
+  width: 100%;
+  height: 580px;
 }
 
 #main #title {
@@ -48,7 +45,7 @@
 
 #main #menu {
   display: flex;
-  height: 90px;
+  height: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -68,25 +65,79 @@
 }
 
 #main #menu input:hover {
-   background-color: #333;
-   color: #5584ac;
-  }
+  background-color: #333;
+  color: #5584ac;
+}
+
+#playground {
+  width: 1750px;
+  height: 444px;
+  background: url("../assets/img/track.jpg") no-repeat;
+  background-size: 100%;
+}
+
+/* A cada coche se le ha asignado la clase "player", usamos display:block para colocarlos uno debajo de otro
+ y le añado un margin-left de 185px para que cuadre con la imágen de la carretera */
+.player {
+  width: 97px;
+  display: block;
+  margin-left: 185px;
+}
 
 /*Fin de los estilos del contenido principal*/
+
+/*Inicio de los estilos de la tabla de posiciones*/
+#table {
+  height: 430px;
+  width: 320px;
+  border-collapse: collapse;
+  background-color: #5584ac;
+  float: right;
+  margin: 23px 25px 0px 0px;
+}
+
+#table tr,
+th,
+td {
+  border: 3px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#table thead .title {
+  padding: 5px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: red;
+}
+
+#table th {
+  background-color: #5584ac;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#table td {
+  background-color: #333;
+  color: #5584ac;
+}
+
+/*Fin de los estilos de la tabla de posiciones*/
 
 /*Inicio de los estilos del pié de página*/
 
 #footer {
-  display: flex;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/megadrive.png");
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-image: url("../assets/img/megadrive.png");
 }
 
 #footer #copyright {
   font-family: "Sega";
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: #5584ac;
 }

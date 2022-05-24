@@ -8,44 +8,99 @@
     <title>Carrera de Coches</title>
   </head>
   <body>
-    <div id="container">
-      <header id="header">
-        <img src="img/gtilerna.png" alt="Gran Turismo Ilerna" id="gtIlerna" />
-      </header>
-      <main id="main">+
-        <p id="title">Elige el numero de participantes</p>
-        <div id="menu">
-          
-          <select id="players">
-            <option value="1"></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
+    <header id="header">
+      <img
+        src="assets/img/gtilerna.png"
+        alt="Gran Turismo Ilerna"
+        id="gtIlerna"
+      />
+    </header>
+    <main id="main">
+      <p id="title">Elige el numero de participantes</p>
+      <section id="menu">
+        <select id="players">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
 
-          </select>
-       
-          <input type="button" value="START" id="start"/>
-          <input type="reset" value="RESET" id="reset"/>
+        <input type="button" value="START" id="start" />
+        <input type="reset" value="RESET" id="reset" hidden />
+      </section>
 
+      <section>
+        <table id="table">
+          <thead>
+            <tr>
+              <th class="title">RESULTADOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Coche 1</th>
+            </tr>
+            <tr id="row1"></tr>
+            <tr>
+              <th>Coche 2</th>
+            </tr>
+            <tr id="row2"></tr>
+            <tr>
+              <th>Coche 3</th>
+            </tr>
+            <tr id="row3"></tr>
+            <tr>
+              <th>Coche 4</th>
+            </tr>
+            <tr id="row4"></tr>
+            <tr>
+              <th>Coche 5</th>
+            </tr>
+            <tr id="row5"></tr>
+            <tr>
+              <th>Coche 6</th>
+            </tr>
+            <tr id="row6">
+              >
+            </tr>
+            <tr>
+              <th>Coche 7</th>
+            </tr>
+            <tr id="row7"></tr>
+            <tr>
+              <th>Coche 8</th>
+            </tr>
+            <tr id="row8"></tr>
+            <tr>
+              <th>Coche 9</th>
+            </tr>
+            <tr id="row9"></tr>
+          </tbody>
+        </table>
+      </section>
 
+      <div id="playground">
+        <!--Aquí irá la zona donde se visualizará la carrera-->
       </div>
 
-        <div id="playground">
-        <!--Aquí irá la zona donde se visualizará la carrera-->
+      <audio class="chiquito">
+        <source src="assets/audio/chiquito.mp3" type="audio/mp3" />
+      </audio>
 
-        </div>
+      <audio class="chiquito2">
+        <source src="assets/audio/chiquito2.mp3" type="audio/mp3" />
+      </audio>
+    </main>
 
-      </main>
+    <footer id="footer">
+      <p id="copyright">&copy; Adolfo Gomez Ligero</p>
+    </footer>
 
-      <footer id="footer">
-        <p id="copyright">&copy; Adolfo Gomez Ligero</p>
-      </footer>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
